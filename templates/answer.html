@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Query: {{query}} </h1>
+
+    <br>
+    <br>
+    <h1> Answers: </h1>
+    <br>
+    {% for i in answers %}
+    <h2 style="color: green">Answer# {{loop.index}} </h2>
+    <h2>Ans:-{{i['answer']}} </h2>
+    <h2>Context:-{{i['answer']}} </h2>
+    <h2>Hl</h2>
+    <h3> AyaNo:- {{i['meta']['AyaNo']}} </h3>
+    <h3> SurahNameE:- {{i['meta']['SurahNameE']}}  </h3>
+    <h3> translator:- {{i['meta']['translator']}} </h3>
+
+    
+    {% endfor %}
+
+</body>
+</html>
